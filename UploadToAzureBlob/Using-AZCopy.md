@@ -6,11 +6,11 @@ Details and download links can be downloaded [here](https://docs.microsoft.com/e
 
 Copy AzCopy.exe to a local path that you can access from the command prompt.
 
-![](/.attachments/figure1.PNG)
+![](https://github.com/SeanGreenbaum/PubDocs/blob/main/UploadToAzureBlob/.attachments/figure1.PNG)
 
 Place the files you want to upload into a specific folder. In this case, I'll copy my files to a subfolder called "Files to Upload"
 
-![](/.attachments/figure2.PNG)
+![](https://github.com/SeanGreenbaum/PubDocs/blob/main/UploadToAzureBlob/.attachments/figure2.PNG)
 
 Next you will need to get the URI for the Azure location you will be uploading the files to. The owner of the Azure Storage account will need to generate a SAS token for you to use. 
 > <span style="color: red">**Note**:</span> These SAS tokens look like web URLs. They are not. Attempting to use one in your web browser will not work. These URIs are intended to be used in applications like AzCopy or Azure Storage Explorer; not Chrome, Edge or Firefox. 
@@ -22,10 +22,10 @@ The AzCopy command to upload a single file to an Azure Storage blob is:
 ```
 AzCopy cp "myfile.txt" "https://destination-azure-storage-URI"
 ```
-![](/.attachments/figure3.PNG)
+![](https://github.com/SeanGreenbaum/PubDocs/blob/main/UploadToAzureBlob/.attachments/figure3.PNG)
 
 The AzCopy command to upload a bunch of files to an Azure Storage blob is:
 ```
 AzCopy cp "*.zip" "https://destination-azure-storage-URI"
 ```
-![](/.attachments/figure4.PNG)
+![](https://github.com/SeanGreenbaum/PubDocs/blob/main/UploadToAzureBlob/.attachments/figure4.PNG)
