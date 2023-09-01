@@ -1,2 +1,0 @@
-# PubDocs
-Public Documentation
